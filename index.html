@@ -5,6 +5,24 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class="container">
+            <h1 id="title">Pizza Pie Order Form</h1>
+            <form id="survey-form" name="frm" action="">
+                <p id="description">What do you want to order?</p>
+                <label id="name-label" for="name">Last Name</label>
+                <input type="text" name="name" id="name" placeholder="Last Name" required>
+
+                <label id="email-label" for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                
+                <label id="number-label" for="number">Phone Number</label>
+                <input type="number" name="number" id="number" placeholder="Phone" min="10"
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>
