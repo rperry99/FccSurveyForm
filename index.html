@@ -10,15 +10,55 @@
             <form id="survey-form" name="frm" action="">
                 <p id="description">What do you want to order?</p>
                 <label id="name-label" for="name">Last Name</label>
-                <input type="text" name="name" id="name" placeholder="Last Name" required>
+                <input type="text" name="name" id="name" placeholder="Last Name" required><br>
 
                 <label id="email-label" for="email">Email Address</label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
-                
-                <label id="number-label" for="number">Phone Number</label>
-                <input type="number" name="number" id="number" placeholder="Phone" min="10"
+                <input type="email" name="email" id="email" placeholder="Email" required><br>
 
-                <input type="submit" value="Submit">
+                <label id="number-label" for="number">Phone Number</label>
+                <input type="number" name="number" id="number" placeholder="Phone" min="10" max="10"><br>
+
+                <label for="size" id="size-label">Size</label>
+                <select name="size" id="dropdown">
+                <option value="default" selected disabled hidden>--Select Size--</option>
+                <option value="personal">Personal (4 Cut)</option>
+                <option value="small">Small (6 Cut)</option>
+                <option value="medium">Medium (8 Cut)</option>
+                <option value="large">Large (12 Cut)</option>
+                <option value="sheet">Sheet (24 Cut)</option>
+                </select>
+
+                <fieldset>
+                <legend>Crust Flavor</legend>
+                <input type="radio" name="crust" value="plain">Plain
+                <input type="radio" name="crust" value="garlic">Garlic
+                <input type="radio" name="crust" value="cheese">Cheese
+                <input type="radio" name="crust" value="herb">Italian Herb
+                <input type="radio" name="crust" value="deep">Deep Dish
+                <input type="radio" name="crust" value="stuffed">Stuffed
+                </fieldset>
+
+                <fieldset>
+                <legend>Toppings</legend>
+                <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+                <input type="checkbox" name="toppings" value="chicken">Chicken
+                <input type="checkbox" name="toppings" value="bacon">Bacon
+                <input type="checkbox" name="toppings" value="ham">Ham
+                <input type="checkbox" name="toppings" value="sausage">Sausage
+                <input type="checkbox" name="toppings" value="g-pepper">Green Peppers
+                <input type="checkbox" name="toppings" value="r-onion">Red Onion
+                <input type="checkbox" name="toppings" value="b-olives">Black Olives
+                <input type="checkbox" name="toppings" value="g-olives">Green Olives
+                <input type="checkbox" name="toppings" value="k-olives">Kalamata Olives
+                <input type="checkbox" name="toppings" value="broccoli">Broccoli
+                </fieldset>
+
+                <label for="instructions">Additional Instructions:</label><br>
+                <textarea name="instructions" id="" cols="30" rows="10" placeholder="Additional Instructions">
+
+                </textarea><br>
+
+                <button type="submit" id="submit">Order My Pie!</button>
             </form>
         </div>
 
